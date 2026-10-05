@@ -41,7 +41,7 @@
 <body>
   <main>
     <h1>Política de Privacidade — Casa360</h1>
-    <p class="meta">Última atualização: 27 de setembro de 2026</p>
+    <p class="meta">Última atualização: 5 de outubro de 2026</p>
 
     <div class="box">
       <strong>Resumo:</strong> os dados de gestão da casa permanecem, na versão
@@ -240,16 +240,19 @@
 
     <p>
       Os dados associados à autenticação permanecem no Firebase Authentication
-      enquanto a conta Casa360 correspondente existir ou durante o período
-      necessário à prestação do serviço.
+      enquanto a conta Casa360 correspondente existir, salvo eliminação ou
+      tratamento aplicável. A eliminação da conta Casa360 é distinta da simples
+      saída da sessão.
     </p>
 
     <p>
-      A aplicação disponibiliza um processo autenticado para iniciar a eliminação
-      da conta Casa360. Depois da reconciliação necessária pelo serviço e da
-      confirmação final da eliminação da conta de autenticação, a aplicação pode
-      remover do dispositivo o perfil local exato associado a essa conta. Isto
-      não constitui uma eliminação física geral de todos os dados remotos.
+      A aplicação disponibiliza um processo autenticado de eliminação com
+      reautenticação recente e verificações de segurança. Depois de o serviço
+      confirmar de forma autoritativa a eliminação da conta de autenticação e a
+      reconciliação necessária, o Casa360 inicia a limpeza do perfil local exato
+      associado a essa conta no dispositivo. Esta confirmação não significa que
+      todos os registos remotos, dados geridos por fornecedores ou cópias noutros
+      dispositivos tenham sido fisicamente eliminados.
     </p>
 
     <p>
@@ -257,29 +260,43 @@
       pública:
       <a href="/account-deletion.html">Eliminação de conta Casa360</a>.
       Este pedido Web/email é separado do processo autenticado na aplicação.
-      Enviar o email não executa automaticamente a eliminação da conta nem remove
-      dados locais do dispositivo; pode ser necessário confirmar a identidade, a
-      conta e o âmbito do pedido antes de ser tomada qualquer ação.
+      Enviar o email inicia o pedido, mas não elimina automaticamente a conta
+      Firebase Authentication nem remove dados locais do dispositivo. Antes de
+      qualquer ação destrutiva, a identidade e a conta têm de ser verificadas
+      através do processo de segurança aplicável, incluindo confirmação no email
+      atualmente verificado da conta quando esse método estiver disponível.
     </p>
 
     <p>
-      Quando aplicável, os registos de conta e autenticação sob controlo do
-      responsável pelo Casa360 podem ser eliminados ou reconciliados. Alguns
-      registos podem ter de permanecer quando tecnicamente necessários para
-      segurança, consistência, prevenção de operações repetidas ou preservação de
-      histórico, para proteger dados legítimos de outros utilizadores autorizados
-      ou devido a outros requisitos de retenção aplicáveis. Não é prometido um
-      prazo fixo nem uma eliminação física imediata e integral desses registos.
+      Depois da eliminação da conta de autenticação, podem permanecer registos
+      técnicos mínimos quando sejam necessários para impedir a reativação não
+      autorizada da mesma identidade, garantir consistência e idempotência,
+      preservar histórico de autorização ou concluir/repetir com segurança uma
+      operação de eliminação. Estes registos são limitados ao fim técnico que
+      justifica a sua conservação e não existe, nesta política, um prazo fixo de
+      retenção que tenha sido validado para todas essas classes.
+    </p>
+
+    <p>
+      Se uma futura funcionalidade Shared Home estiver ativa, eliminar uma conta
+      não equivale a eliminar toda a casa partilhada. Dados da casa que continuem
+      legitimamente necessários a outros membros autorizados podem permanecer. Um
+      último proprietário pode ter de transferir a propriedade ou utilizar um
+      processo específico de encerramento da casa antes de conseguir sair ou
+      concluir a eliminação da conta.
     </p>
 
     <p>
       A eliminação da conta Casa360 não elimina a conta Google do utilizador nem
       comprova a eliminação de dados de perfil geridos pela Google ou por outro
       fornecedor, do identificador da instalação Firebase, de logs ou metadados
-      de pedidos e serviço, de todos os registos de histórico que contenham um
-      identificador da conta, de registos partilhados legítimos de outros
-      utilizadores, ou de cópias locais, offline, exportadas ou capturadas noutros
-      dispositivos.
+      de pedidos e serviço, de todos os registos históricos que contenham um
+      identificador da conta, de dados partilhados que continuem legitimamente
+      associados a outros utilizadores, ou de cópias locais, offline, exportadas
+      ou capturadas noutros dispositivos. O identificador da instalação Firebase
+      é específico da instalação e tem um ciclo de vida separado da conta
+      Firebase Authentication; o Casa360 não o elimina automaticamente como
+      efeito da eliminação da conta.
     </p>
 
     <p>
@@ -289,7 +306,6 @@
       O utilizador mantém controlo sobre esses dados e ficheiros através do
       dispositivo e do respetivo fornecedor de armazenamento.
     </p>
-
     <h2>14. Crianças</h2>
 
     <p>
