@@ -49,7 +49,7 @@
 <body>
   <main>
     <h1>Eliminação de conta — Casa360</h1>
-    <p class="meta">Última atualização: 27 de setembro de 2026</p>
+    <p class="meta">Última atualização: 5 de outubro de 2026</p>
 
     <div class="box">
       Esta página permite iniciar um pedido externo e manual de eliminação da
@@ -90,29 +90,45 @@
     <h2>Como o pedido é tratado</h2>
 
     <p>
-      Pode ser necessário solicitar informação adicional para verificar a
-      identidade, confirmar a conta correta e determinar o âmbito aplicável antes
-      de ser tomada qualquer ação. Depois dessa verificação, os registos de conta
-      e autenticação sob controlo do responsável pelo Casa360 podem ser eliminados
-      ou reconciliados, conforme aplicável.
+      Antes de qualquer ação destrutiva, a identidade e a conta têm de ser
+      verificadas. O processo manual previsto utiliza a conta existente no
+      Firebase Authentication como referência e requer confirmação através de um
+      desafio enviado para o endereço de email atualmente verificado dessa conta.
+      Indicar um email no pedido não substitui essa verificação.
     </p>
 
     <p>
-      Alguns registos podem ter de permanecer quando tecnicamente necessários
-      para segurança, consistência, prevenção de operações repetidas ou
-      preservação de histórico, para proteger dados legítimos de outros
-      utilizadores autorizados, por dependerem de serviços geridos por
-      fornecedores, ou devido a outros requisitos de retenção aplicáveis. Não é
-      prometido um período de retenção específico nem uma eliminação física
-      imediata e integral de todos os registos remotos.
+      Depois de a identidade ser confirmada, o pedido é sujeito às verificações de
+      segurança e reconciliação aplicáveis. A eliminação não é executada apenas
+      porque o email foi recebido. Se a conta puder ser eliminada com segurança,
+      a conta Firebase Authentication alvo pode ser removida e a operação
+      registada como concluída pelo serviço.
+    </p>
+
+    <p>
+      Alguns registos técnicos mínimos podem permanecer quando sejam necessários
+      para impedir reativação não autorizada, garantir consistência e
+      idempotência, preservar histórico de autorização ou permitir a recuperação
+      segura de uma operação de eliminação. Não existe um período fixo de
+      retenção validado para todas essas classes, e a conservação deve manter-se
+      limitada ao respetivo fim técnico.
+    </p>
+
+    <p>
+      Se uma futura funcionalidade Shared Home estiver ativa, a eliminação da
+      conta não implica apagar a casa partilhada nem dados que continuem
+      legitimamente necessários a outros membros autorizados. Um último
+      proprietário pode ter de transferir a propriedade ou utilizar um processo
+      específico de encerramento da casa antes de conseguir concluir a eliminação.
     </p>
 
     <p>
       A aplicação também dispõe de um processo autenticado de eliminação. Nesse
-      processo separado, a conta Firebase Authentication alvo pode ser removida
-      depois das verificações e reconciliações necessárias, permitindo então a
-      limpeza exata do perfil local associado à conta no dispositivo. Este
-      processo não representa uma eliminação geral de todos os dados na nuvem.
+      processo separado, após reautenticação e as verificações necessárias, a
+      conta Firebase Authentication alvo pode ser removida e o Casa360 inicia a
+      limpeza do perfil local exato associado à conta no dispositivo. Nem o
+      processo autenticado nem o pedido manual representam uma eliminação física
+      geral de todos os dados remotos ou de dados geridos por fornecedores.
     </p>
 
     <h2>Dados da casa armazenados localmente</h2>
@@ -138,9 +154,11 @@
       Android, cópias offline, exportadas ou capturadas noutros dispositivos, a
       tua conta Google, dados de perfil geridos pela Google ou por outro
       fornecedor, identificadores de instalação Firebase, ou logs e metadados de
-      pedidos e serviço geridos por esses fornecedores.
+      pedidos e serviço geridos por esses fornecedores. O identificador da
+      instalação Firebase é específico da instalação e tem um ciclo de vida
+      separado da conta Firebase Authentication; não é eliminado automaticamente
+      como efeito da eliminação da conta.
     </p>
-
     <h2>Verificação e contacto</h2>
 
     <p>
