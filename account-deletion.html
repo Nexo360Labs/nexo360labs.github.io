@@ -49,7 +49,7 @@
 <body>
   <main>
     <h1>Eliminação de conta — Casa360</h1>
-    <p class="meta">Última atualização: 5 de outubro de 2026</p>
+    <p class="meta">Última atualização: 7 de outubro de 2026</p>
 
     <div class="box">
       Esta página permite iniciar um pedido externo e manual de eliminação da
@@ -59,10 +59,10 @@
     </div>
 
     <p>
-      O pedido efetuado por esta página é separado do processo autenticado de
-      eliminação disponível na aplicação. Enviar um email não elimina por si só a
-      conta Firebase Authentication, não executa o processo autenticado da
-      aplicação e não remove dados locais do dispositivo.
+      Na versão atual, a opção <strong>Pedir eliminação da conta</strong>
+      apresentada dentro da aplicação abre esta mesma página. O pedido é tratado
+      manualmente. Enviar um email não elimina por si só a conta Firebase
+      Authentication e não remove dados locais do dispositivo.
     </p>
 
     <h2>Como pedir a eliminação</h2>
@@ -99,19 +99,20 @@
 
     <p>
       Depois de a identidade ser confirmada, o pedido é sujeito às verificações de
-      segurança e reconciliação aplicáveis. A eliminação não é executada apenas
-      porque o email foi recebido. Se a conta puder ser eliminada com segurança,
-      a conta Firebase Authentication alvo pode ser removida e a operação
-      registada como concluída pelo serviço.
+      segurança aplicáveis. A eliminação não é executada apenas porque o email foi
+      recebido. Se a conta estiver corretamente verificada, a conta Firebase
+      Authentication correspondente ao UID alvo pode ser removida através do
+      processo administrativo autorizado e o pedido pode ser registado como
+      concluído.
     </p>
 
     <p>
-      Alguns registos técnicos mínimos podem permanecer quando sejam necessários
-      para impedir reativação não autorizada, garantir consistência e
-      idempotência, preservar histórico de autorização ou permitir a recuperação
-      segura de uma operação de eliminação. Não existe um período fixo de
-      retenção validado para todas essas classes, e a conservação deve manter-se
-      limitada ao respetivo fim técnico.
+      Podem permanecer registos mínimos do pedido, da verificação e da confirmação
+      quando sejam necessários para segurança, tratamento do pedido ou prova da
+      respetiva conclusão. A correspondência de email e determinados logs ou
+      metadados técnicos podem também ser geridos pelos respetivos fornecedores.
+      Não existe nesta página um período fixo universal validado para todas essas
+      classes, e a conservação deve manter-se limitada à finalidade aplicável.
     </p>
 
     <p>
@@ -123,12 +124,11 @@
     </p>
 
     <p>
-      A aplicação também dispõe de um processo autenticado de eliminação. Nesse
-      processo separado, após reautenticação e as verificações necessárias, a
-      conta Firebase Authentication alvo pode ser removida e o Casa360 inicia a
-      limpeza do perfil local exato associado à conta no dispositivo. Nem o
-      processo autenticado nem o pedido manual representam uma eliminação física
-      geral de todos os dados remotos ou de dados geridos por fornecedores.
+      A versão atual não dispõe de um segundo processo automático de eliminação
+      dentro da aplicação. O caminho apresentado na app encaminha o utilizador
+      para esta página. A eliminação manual da conta Firebase Authentication não
+      representa uma eliminação física geral de dados geridos por fornecedores e
+      não consegue apagar remotamente dados que existam apenas no dispositivo.
     </p>
 
     <h2>Dados da casa armazenados localmente</h2>
