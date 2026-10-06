@@ -41,7 +41,7 @@
 <body>
   <main>
     <h1>Política de Privacidade — Casa360</h1>
-    <p class="meta">Última atualização: 5 de outubro de 2026</p>
+    <p class="meta">Última atualização: 7 de outubro de 2026</p>
 
     <div class="box">
       <strong>Resumo:</strong> os dados de gestão da casa permanecem, na versão
@@ -246,35 +246,31 @@
     </p>
 
     <p>
-      A aplicação disponibiliza um processo autenticado de eliminação com
-      reautenticação recente e verificações de segurança. Depois de o serviço
-      confirmar de forma autoritativa a eliminação da conta de autenticação e a
-      reconciliação necessária, o Casa360 inicia a limpeza do perfil local exato
-      associado a essa conta no dispositivo. Esta confirmação não significa que
-      todos os registos remotos, dados geridos por fornecedores ou cópias noutros
-      dispositivos tenham sido fisicamente eliminados.
+      Na versão atual, a secção da conta da aplicação disponibiliza a opção
+      <strong>Pedir eliminação da conta</strong>. Essa opção abre a página pública
+      <a href="/account-deletion.html">Eliminação de conta Casa360</a>, onde o
+      utilizador pode iniciar o pedido. A versão atual não apresenta como
+      operacional um processo automático de eliminação baseado em Cloud Functions
+      ou sincronização Shared Home.
     </p>
 
     <p>
-      Em alternativa, o utilizador pode iniciar um pedido manual através da página
-      pública:
-      <a href="/account-deletion.html">Eliminação de conta Casa360</a>.
-      Este pedido Web/email é separado do processo autenticado na aplicação.
-      Enviar o email inicia o pedido, mas não elimina automaticamente a conta
-      Firebase Authentication nem remove dados locais do dispositivo. Antes de
-      qualquer ação destrutiva, a identidade e a conta têm de ser verificadas
-      através do processo de segurança aplicável, incluindo confirmação no email
-      atualmente verificado da conta quando esse método estiver disponível.
+      O pedido é tratado manualmente. Enviar o email inicia o pedido, mas não
+      elimina automaticamente a conta Firebase Authentication nem remove dados
+      locais do dispositivo. Antes de qualquer ação destrutiva, a identidade e a
+      conta têm de ser verificadas, incluindo confirmação através do endereço de
+      email atualmente verificado da conta. Depois da verificação, a conta Firebase
+      Authentication alvo pode ser eliminada através do processo administrativo
+      autorizado.
     </p>
 
     <p>
-      Depois da eliminação da conta de autenticação, podem permanecer registos
-      técnicos mínimos quando sejam necessários para impedir a reativação não
-      autorizada da mesma identidade, garantir consistência e idempotência,
-      preservar histórico de autorização ou concluir/repetir com segurança uma
-      operação de eliminação. Estes registos são limitados ao fim técnico que
-      justifica a sua conservação e não existe, nesta política, um prazo fixo de
-      retenção que tenha sido validado para todas essas classes.
+      Podem permanecer registos mínimos do pedido, da verificação e da confirmação
+      quando sejam necessários para segurança, tratamento do pedido ou prova da
+      respetiva conclusão. A correspondência de email e determinados logs ou
+      metadados técnicos também podem ser geridos pelos respetivos fornecedores.
+      Esta política não estabelece um prazo fixo universal para essas classes e a
+      sua conservação deve permanecer limitada à finalidade aplicável.
     </p>
 
     <p>
